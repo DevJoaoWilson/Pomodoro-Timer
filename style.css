@@ -1,0 +1,130 @@
+:root {
+  --bg-p: #cd202d;
+  --btn-focus: #cd202d;
+  --color-focus: #ffffff;
+  --btn-g: #3e3f43;
+  --color-btn: #a9a7a7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-p);
+  color: var(--color-focus);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 750px;
+  height: 500px;
+  background-color: var(--btn-g);
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 33px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 33px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 33px 1px rgba(0, 0, 0, 0.75);
+}
+
+#title{
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 9px black;
+}
+
+.painel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  margin: 30px;
+  background-color: transparent;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 33px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 33px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 33px 1px rgba(0, 0, 0, 0.75);
+}
+
+.painel p {
+  padding: 22px;
+}
+
+.painel p.active {
+  opacity: 1;
+  color: var(--btn-focus);
+}
+
+.timer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 33px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 33px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 33px 1px rgba(0, 0, 0, 0.75);
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  position: relative;
+}
+
+.circle::before {
+  content: '';
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+
+.time {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.time p {
+  font-size: 4rem;
+}
+
+.time p:nth-of-type(2) {
+  position: relative;
+  
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.controls #reset {
+  display: none;
+}
+
+i{
+  font-size: 54px;
+}
